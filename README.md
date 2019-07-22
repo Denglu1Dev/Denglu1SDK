@@ -2,6 +2,7 @@
 
 ### 1、接入SDK
 - 配置仓库
+
 ```gradle
 allprojects {
     repositories {
@@ -12,10 +13,12 @@ allprojects {
 }
 ```
 - 配置依赖
+
 ```gradle
 implementation "com.denglu1.sdk:pingan:1.0.0"
 ```
-- 依赖传递，
+- 依赖传递
+
 SDK依赖一些常用Android开发库，这里列出来说明一下。由于依赖传递一般都是默认开启的，所以，只需添加上面一条依赖即可，下面的不用添加。
 ```gradle
 //安卓支持库，一般App都有，版本可以按照自己的配置
@@ -33,7 +36,9 @@ implementation "io.reactivex.rxjava2:rxandroid:2.1.1+"
 
 ```
 ### 2、配置服务器参数
+
 - 在Application子类#onCreate()方法中配置域名，端口，是否是Https,以及证书绑定相关信息。
+
 ```java
 @Override
 public void onCreate() {
@@ -59,7 +64,7 @@ public void onCreate() {
 
 }
 ```
-参考的配置例子如下：
+- 参考的配置例子如下：
 ```
 Denglu1Helper.getInstance()
             .setServerHost("icore-kbs-stg.pa18.com")
