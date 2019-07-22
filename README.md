@@ -1,6 +1,7 @@
 ## Denglu1SDK-pingan 接入文档
 
 ### 1、接入SDK
+
 - 配置仓库
 
 ```gradle
@@ -20,6 +21,7 @@ implementation "com.denglu1.sdk:pingan:1.0.0"
 - 依赖传递
 
 SDK依赖一些常用Android开发库，这里列出来说明一下。由于依赖传递一般都是默认开启的，所以，只需添加上面一条依赖即可，下面的不用添加。
+
 ```gradle
 //安卓支持库，一般App都有，版本可以按照自己的配置
 implementation "com.android.support:appcompat-v7:27.1.1+"
@@ -53,6 +55,7 @@ public void onCreate() {
 - 配置证书绑定
 
 如果使用了Https，可以设置证书绑定提高安全性。setHttps第二个参数设置如下，进入SDK界面-->扫码会有网络请求，网络请求会失败，在logcat中输入OkHttp,就可以在log中过滤得到需要的字符串（sha256）数组。
+
 ```java
 @Override
 public void onCreate() {
@@ -65,6 +68,7 @@ public void onCreate() {
 }
 ```
 - 参考的配置例子如下：
+
 ```
 Denglu1Helper.getInstance()
             .setServerHost("icore-kbs-stg.pa18.com")
@@ -77,7 +81,9 @@ Denglu1Helper.getInstance()
 ```
 
 ### 3、设置SDK入口点击事件
+
 这是最后一个步骤。接入App应该预留一个UI入口，比如一个按钮。相应View的点击事件应如下。
+
 ```java
 //userName、password对应App的账号，密码的hash。密码的hash方式可以自定义，但一开始确定后，就不能再更改。
 View sdkEntry = findViewById(R.id.tv_fun_entry);
