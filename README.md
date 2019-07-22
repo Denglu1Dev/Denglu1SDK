@@ -16,7 +16,7 @@ allprojects {
 - 配置依赖
 
 ```gradle
-implementation "com.denglu1.sdk:pingan:1.0.0"
+implementation 'com.denglu1.sdk:pingan:1.0.0'
 ```
 - 依赖传递
 
@@ -24,17 +24,17 @@ SDK依赖一些常用Android开发库，这里列出来说明一下。由于依�
 
 ```gradle
 //安卓支持库，一般App都有，版本可以按照自己的配置
-implementation "com.android.support:appcompat-v7:27.1.1+"
-implementation "com.android.support:support-annotations:27.1.1+"
-implementation "com.android.support:design:27.1.1+"
+implementation 'com.android.support:appcompat-v7:27.1.1+'
+implementation 'com.android.support:support-annotations:27.1.1+'
+implementation 'com.android.support:design:27.1.1+'
 //网络开发库，一般App都有，版本可以按照自己的配置
-implementation "com.squareup.retrofit2:retrofit:2.4.0+"
-implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0+"
-implementation "com.squareup.retrofit2:converter-gson:2.4.0+"
-implementation "com.google.code.gson:gson:2.8.2+"
+implementation 'com.squareup.retrofit2:retrofit:2.4.0+'
+implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0+'
+implementation 'com.squareup.retrofit2:converter-gson:2.4.0+'
+implementation 'com.google.code.gson:gson:2.8.2+'
 //rx库
-implementation "io.reactivex.rxjava2:rxjava:2.2.6+"
-implementation "io.reactivex.rxjava2:rxandroid:2.1.1+"
+implementation 'io.reactivex.rxjava2:rxjava:2.2.6+'
+implementation 'io.reactivex.rxjava2:rxandroid:2.1.1+'
 
 ```
 ### 2、配置服务器参数
