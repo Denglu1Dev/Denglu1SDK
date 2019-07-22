@@ -1,4 +1,4 @@
-## Denglu1SDK-pingan 接入文档
+## 平安SDK接入文档
 
 ### 1、接入SDK
 
@@ -48,7 +48,7 @@ public void onCreate() {
     Denglu1Helper.getInstance()
             .setServerHost("www.pingan.com")//域名
             .setServerPort(443)//端口
-            .setHttps(true, null);//是否是https,证书绑定参数
+            .setHttps(true, null);//是否是https,证书绑定参数（如若不设置，填null）
 
 }
 ```
@@ -95,4 +95,4 @@ sdkEntry.setOnClickListener(new View.OnClickListener() {
 });
 ```
 ### 4、关于混淆
-SDK是部分混淆过的，aar里也包含混淆文件，所以，不需要配置。如果打包release版出现问题。再联系我们。
+SDK是部分混淆过的，aar里也包含混淆配置文件，所以，不需要特别处理。如果打包release版出现问题。再联系我们。
