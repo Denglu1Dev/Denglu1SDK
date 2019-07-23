@@ -1,4 +1,4 @@
-## SDK Android端接入文档
+## Android端接入文档
 
 ### 1、接入SDK
 
