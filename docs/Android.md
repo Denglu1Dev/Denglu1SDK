@@ -16,7 +16,7 @@ allprojects {
 - 配置依赖
 
 ```gradle
-implementation 'com.denglu1.sdk:pingan:0.0.7'
+implementation 'com.denglu1.sdk:pingan:0.0.8'
 ```
 - 依赖传递
 
