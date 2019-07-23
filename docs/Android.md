@@ -1,4 +1,4 @@
-## 平安SDK Android端接入文档
+## SDK Android端接入文档
 
 ### 1、接入SDK
 
