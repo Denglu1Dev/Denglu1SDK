@@ -1,13 +1,13 @@
-### 0、SDK接入文档
+### SDK接入文档
 
-#### 0.1、[Android端接入](/docs/Android.md)
+#### i、iOS端接入（暂无）
+
+#### ii、[Android端接入](/docs/Android.md)
 
 - 提供独立的UI、加密存储、加密网络通信模块，方便快速集成。
 - 支持：账号添加、扫码登录、扫码修改密码、安全验证等功能。
 
-#### 0.2、iOS端接入（暂无）
-
-#### 0.3、[SDK更新日志](/docs/CHANGES.md)
+#### iii、[SDK更新日志](/docs/CHANGES.md)
 
 ### 1、测试网址
 - 扫码登录
