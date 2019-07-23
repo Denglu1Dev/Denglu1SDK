@@ -96,3 +96,34 @@ sdkEntry.setOnClickListener(new View.OnClickListener() {
 ```
 ### 4、关于混淆
 SDK是部分混淆过的，aar里也包含混淆配置文件，所以，不需要特别处理。如果打包release版出现问题。再联系我们。
+
+### 5、自定义选项
+
+- 自定义主题色
+
+```
+<color name="denglu1_colorPrimary" tools:override="true">#008577</color>
+<color name="denglu1_colorAccent"  tools:override="true">#D81B60</color>
+```
+
+- 自定义标题栏
+
+```
+<!-- 标题栏高度 -->
+<dimen name="denglu1_toolbarHeight" tools:override="true">56dp</dimen>
+<!-- 标题栏字体大小 -->
+<dimen name="denglu1_titleTextSize" tools:override="true">20sp</dimen>
+```
+
+- 自定义按钮圆角大小
+
+```
+<dimen name="denglu1_bottomButtonRadius" tools:override="true">2dp</dimen>
+```
+
+- 自定义对话框背景圆角大小
+
+```
+<dimen name="denglu1_dialogBgRadius" tools:override="true">8dp</dimen>
+```
+
