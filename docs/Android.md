@@ -46,7 +46,7 @@ implementation 'io.reactivex.rxjava2:rxandroid:2.1.1+'
 public void onCreate() {
     super.onCreate();
     Denglu1Helper.getInstance()
-            .setServerHost("www.pingan.com")//域名
+            .setServerHost("www.xxxx.com")//域名
             .setServerPort(443)//端口
             .setHttps(true, null);//是否是https,证书绑定参数（如若不设置，填null）
 
@@ -61,7 +61,7 @@ public void onCreate() {
 public void onCreate() {
     super.onCreate();
     Denglu1Helper.getInstance()
-            .setServerHost("www.pingan.com")
+            .setServerHost("www.xxxx.com")
             .setServerPort(443)
             .setHttps(true, new String[]{});
 
@@ -71,12 +71,12 @@ public void onCreate() {
 
 ```
 Denglu1Helper.getInstance()
-            .setServerHost("icore-kbs-stg.pa18.com")
+            .setServerHost("test.com")
             .setServerPort(10106)
             .setHttps(true, new String[]{
-                    "sha256/UC4BKByx58Sph1JCovz7qUZAwupux5uMYm9s0dnVTFI=",
-                    "sha256/zUIraRNo+4JoAYA7ROeWjARtIoN4rIEbCpfCRQT6N6A=",
-                    "sha256/r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
+                    "sha256/UC4BKByx58Sph1JCovz7qUGAwupux5uMYm9s0dnVTFI=",
+                    "sha256/zUIraRNo+4JoAYA7ROeWjAYtIoN4rIEbCpfCRQT6N6A=",
+                    "sha256/r/mIkG3eEpVdm+u/ko/cwczOMo1bk4TyHIlByibiA5E="
             });
 ```
 
