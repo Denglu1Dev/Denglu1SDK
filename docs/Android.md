@@ -2,8 +2,9 @@
 
 ### 1、接入SDK
 
-- 配置仓库
+#### 1.1、配置仓库
 
+打开整个Project的build.gradle。添加如下配置：
 ```gradle
 allprojects {
     repositories {
@@ -13,14 +14,28 @@ allprojects {
     }
 }
 ```
-- 配置依赖
+#### 1.2、配置依赖
 
+打开app module的build.gradle。添加如下配置：
 ```gradle
 implementation 'com.denglu1.sdk:pingan:0.0.8'
 ```
-- 依赖传递
+#### 1.3、矢量图兼容
 
-SDK依赖一些常用Android开发库，这里列出来说明一下。由于依赖传递一般都是默认开启的，所以，只需添加上面一条依赖即可，下面的不用添加。
+为了使安卓5.0（API21）以下系统兼容矢量图。打开app module的build.gradle。添加如下配置：
+
+```
+android{
+    ...
+    defaultConfig{
+        ...
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+```
+#### 1.4、依赖传递
+
+SDK依赖一些常用Android开发库，这里列出来说明一下。由于依赖传递一般都是默认开启的，所以，只需添加1.2所述的一条依赖即可，下面的不用添加。
 
 ```gradle
 //安卓支持库，一般App都有，版本可以按照自己的配置
@@ -39,7 +54,7 @@ implementation 'io.reactivex.rxjava2:rxandroid:2.1.1+'
 ```
 ### 2、配置服务器参数
 
-- 在Application子类#onCreate()方法中配置域名，端口，是否是Https，以及证书绑定相关信息。
+在Application子类#onCreate()方法中配置域名，端口，是否是Https，以及证书绑定相关信息。
 
 ```java
 @Override
@@ -52,7 +67,7 @@ public void onCreate() {
 
 }
 ```
-- 配置证书绑定
+#### 2.1、配置证书绑定
 
 如果使用了Https，可以设置证书绑定提高安全性。setHttps第二个参数设置如下，然后进入SDK界面-->扫描测试二维码，之后会有网络请求，网络请求会失败。在logcat中输入OkHttp，就可以在log中过滤得到需要的字符串（sha256）数组。
 
@@ -67,7 +82,7 @@ public void onCreate() {
 
 }
 ```
-- 参考的配置例子如下：
+#### 2.2、参考的配置例子如下：
 
 ```
 Denglu1Helper.getInstance()
@@ -99,14 +114,14 @@ SDK是部分混淆过的，aar里也包含混淆配置文件，所以，不需�
 
 ### 5、自定义选项
 
-- 自定义主题色
+#### 5.1、自定义主题色
 
 ```
 <color name="denglu1_colorPrimary" tools:override="true">#008577</color>
 <color name="denglu1_colorAccent"  tools:override="true">#D81B60</color>
 ```
 
-- 自定义标题栏
+#### 5.2、自定义标题栏
 
 ```
 <!-- 标题栏高度 -->
@@ -115,13 +130,13 @@ SDK是部分混淆过的，aar里也包含混淆配置文件，所以，不需�
 <dimen name="denglu1_titleTextSize" tools:override="true">20sp</dimen>
 ```
 
-- 自定义按钮圆角大小
+#### 5.3、自定义按钮圆角大小
 
 ```
 <dimen name="denglu1_bottomButtonRadius" tools:override="true">2dp</dimen>
 ```
 
-- 自定义对话框背景圆角大小
+#### 5.4、自定义对话框背景圆角大小
 
 ```
 <dimen name="denglu1_dialogBgRadius" tools:override="true">8dp</dimen>
