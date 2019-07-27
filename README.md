@@ -23,6 +23,20 @@ http://39.105.135.105/pa/user/login
 http://39.105.135.105/pa/user/modify
 ```
 
+- 测试服务器
+
+在Application子类#onCreate()方法中配置如下：
+```java
+@Override
+public void onCreate() {
+    super.onCreate();
+    Denglu1Helper.getInstance()
+            .setServerHost("39.105.135.105")
+            .setServerPort(80)
+            .setHttps(false, null);
+}
+```
+
 ### 2、测试截图
 #### 2.1、SDK主界面
 
