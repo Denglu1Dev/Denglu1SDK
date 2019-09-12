@@ -18,7 +18,7 @@ allprojects {
 
 打开app module的build.gradle。添加如下配置：
 ```gradle
-implementation 'com.denglu1.sdk:pingan:0.0.8'
+implementation 'com.denglu1.sdk:pingan:0.0.9'
 ```
 #### 1.3、矢量图兼容
 

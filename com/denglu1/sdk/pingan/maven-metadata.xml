@@ -3,7 +3,7 @@
   <groupId>com.denglu1.sdk</groupId>
   <artifactId>pingan</artifactId>
   <versioning>
-    <release>0.0.8</release>
+    <release>0.0.9</release>
     <versions>
       <version>1.0.0</version>
       <version>0.0.1</version>
@@ -14,7 +14,8 @@
       <version>0.0.7</version>
       <version>0.1.0</version>
       <version>0.0.8</version>
+      <version>0.0.9</version>
     </versions>
-    <lastUpdated>20190723085608</lastUpdated>
+    <lastUpdated>20190912051426</lastUpdated>
   </versioning>
 </metadata>
